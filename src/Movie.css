@@ -1,0 +1,46 @@
+.movieContainer{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.movieContainer h2{
+    margin-top:2rem;
+}
+
+.movieContainer figure{
+    height: 50rem;
+    width: 100%;
+}
+
+.movieContainer figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.movieContainer button{
+    border-color: yellow;
+    border-style: solid;
+    font-weight: bold;
+    padding: 5px;
+    background-color: transparent;
+    color: yellow;
+    transition: 0.2s;
+    
+}
+
+.movieContainer button:hover{
+    border-color: red;
+    border-style: solid;
+    font-weight: bold;
+    padding: 5px;
+    background-color: transparent;
+    color: red;
+    
+}
+
+@media (max-width: 56.25rem) {      /*bij 900px, 1 rem in media query is gelijk aan 16 pixels*/
+    .movieContainert{
+        width: 100%;
+    }
+}

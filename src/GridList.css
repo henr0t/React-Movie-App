@@ -1,0 +1,18 @@
+.gridList{
+width: 70%;
+margin: 0 auto;                                 /*Met width zet het in het midden van de pagina*/
+grid-template-columns: repeat(6,minmax(0,1fr)); /*maakt 6 blokken dat 1/6 is van die 70% width;*/
+display:grid;                                   /*laat grid zien*/
+grid-column-gap: 2rem;                          /*ruimte tussen de grid items*/
+grid-row-gap: 2rem;
+}
+
+@media (max-width: 56.25rem) {      /*bij 900px, 1 rem in media query is gelijk aan 16 pixels*/
+    .gridList{
+        width: 100%;
+    }
+
+    .gridItem figure img{
+        object-fit: contain;        /* plaatje past in de container*/
+    }
+} 
